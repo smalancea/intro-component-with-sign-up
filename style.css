@@ -1,0 +1,122 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Colors */
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Red);
+  background-image: url(./images/bg-intro-desktop.png);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  width: 74vw;
+  min-height: 100vh;
+}
+
+.container > div {
+  flex: 1;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.main-paragraph {
+  font-weight: 400;
+  padding-right: 80px;
+}
+
+.top-box-blue {
+  background-color: var(--Blue);
+  border-radius: 12px;
+  box-shadow: hsl(249, 10%, 26%) 0 6px 8px;
+  margin-bottom: 30px;
+}
+
+.blue-box-text {
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: var(--Dark-Blue);
+  display: block;
+  font-size: 15px;
+  padding: 20px 25px;
+  width: 100%;
+  border: 1px solid var(--Grayish-Blue);
+  border-radius: 6px;
+  margin-bottom: 22px;
+}
+
+div > small {
+  color: var(--Red);
+  display: block;
+  text-align: right;
+  margin: -20px 2px 18px;
+}
+
+.visible {
+  display: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: var(--Green);
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  box-shadow: hsl(154, 55%, 34%) 0 4px 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+form > small {
+  color: var(--Grayish-Blue);
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+a {
+  color: var(--Red);
+  font-weight: 600;
+  text-decoration: none;
+}
