@@ -102,6 +102,7 @@ button {
   border-radius: 6px;
   box-shadow: hsl(154, 55%, 34%) 0 4px 6px;
   cursor: pointer;
+  transition: 100ms ease-in-out;
 }
 
 button:hover {
@@ -119,4 +120,41 @@ a {
   color: var(--Red);
   font-weight: 600;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    margin-top: 60px;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .main-paragraph {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 160%;
+  }
+
+  .blue-box-text {
+    padding: 18px;
+  }
+
+  form {
+    padding: 22px;
+    box-shadow: 0 8px 6px hsl(0, 37%, 52%);
+  }
+
+  input {
+    padding: 16px 22px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 86vw;
+    margin-bottom: 80px;
+  }
 }
