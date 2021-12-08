@@ -35,26 +35,76 @@
         </div>
 
         <form>
+          <!-- The entire input field wrapped in a div -->
           <div>
-            <input type="text" placeholder="First Name" id="firstname" />
-            <small class="visible"><i>First Name cannot be empty</i></small>
+            <!-- Wrapped in a div because of the icon-error -->
+            <div class="input-parrent">
+              <img
+                class="icon-error"
+                id="icon-error"
+                src="./images/icon-error.svg"
+                alt="error-icon"
+              />
+              <input type="text" placeholder="First Name" id="firstname" />
+            </div>
+
+            <small id="error-message" class="error-message"
+              ><i>First Name cannot be empty</i></small
+            >
           </div>
+          <!-- The entire input field wrapped in a div -->
           <div>
-            <input type="text" placeholder="Last Name" id="lastname" />
-            <small class="visible"><i>Last Name cannot be empty</i></small>
+            <!-- Wrapped in a div because of the icon-error -->
+            <div class="input-parrent">
+              <img
+                class="icon-error"
+                id="icon-error"
+                src="./images/icon-error.svg"
+                alt="error-icon"
+              />
+              <input type="text" placeholder="Last Name" id="lastname" />
+            </div>
+
+            <small id="error-message" class="error-message"
+              ><i>Last Name cannot be empty</i></small
+            >
           </div>
+          <!-- The entire input field wrapped in a div -->
           <div>
-            <input type="email" placeholder="Email Address" id="email" />
-            <small class="visible"
+            <!-- Wrapped in a div because of the icon-error -->
+            <div class="input-parrent">
+              <img
+                class="icon-error"
+                id="icon-error"
+                src="./images/icon-error.svg"
+                alt="error-icon"
+              />
+              <input type="email" placeholder="Email Address" id="email" />
+            </div>
+
+            <small id="error-message" class="error-message"
               ><i>Looks like this is not an email</i></small
             >
           </div>
+          <!-- The entire input field wrapped in a div -->
           <div>
-            <input type="password" placeholder="Password" id="password" />
-            <small class="visible"><i>Password cannot be empty</i></small>
+            <!-- Wrapped in a div because of the icon-error -->
+            <div class="input-parrent">
+              <img
+                class="icon-error"
+                id="icon-error"
+                src="./images/icon-error.svg"
+                alt="error-icon"
+              />
+              <input type="password" placeholder="Password" id="password" />
+            </div>
+
+            <small id="error-message" class="error-message"
+              ><i>Password cannot be empty</i></small
+            >
           </div>
 
-          <button>Claim your free trial</button>
+          <button type="submit">Claim your free trial</button>
           <small>
             By clicking the button, you are agreeing to our
             <a href="#" target="_blank">Terms and Services</a>

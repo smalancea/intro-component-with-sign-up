@@ -38,6 +38,7 @@ body {
 h1 {
   font-size: 50px;
   line-height: 60px;
+  padding-right: 12px;
 }
 
 .main-paragraph {
@@ -77,6 +78,17 @@ input {
   margin-bottom: 22px;
 }
 
+.input-parrent {
+  position: relative;
+}
+
+.icon-error {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 div > small {
   color: var(--Red);
   display: block;
@@ -84,7 +96,7 @@ div > small {
   margin: -20px 2px 18px;
 }
 
-.visible {
+.error-message {
   display: none;
 }
 
@@ -122,7 +134,8 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 375px) {
+/* Mobile devices */
+@media screen and (max-width: 680px) {
   h1 {
     margin-top: 60px;
     font-size: 30px;
