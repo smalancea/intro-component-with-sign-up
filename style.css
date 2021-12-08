@@ -78,6 +78,15 @@ input {
   margin-bottom: 22px;
 }
 
+.field-group.error .error-message,
+.field-group.error .icon-error {
+  display: block;
+}
+
+.field-group.error input {
+  border: 2px solid var(--Red);
+}
+
 .input-parrent {
   position: relative;
 }

@@ -1,18 +1,32 @@
-// const form = document.querySelector('form');
-// const iconError = document.getElementById('icon-error');
-// const inputField = document.querySelector('input');
-// const errorMessage = document.getElementById('.error-message');
+const form = document.querySelector('form');
+const inputs = document.querySelectorAll('input');
 
-// const pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+let regex =
+  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault();
+function validateForm(e) {
+  e.preventDefault();
+  inputs.forEach((input) => {
+    if (!input.value) {
+      input.parentElement.parentElement.classList.add('error');
+    } else {
+      input.parentElement.parentElement.classList.remove('error');
+    }
 
-//   const firstName = form['firstname'].value;
-//   const lastName = form['lastname'].value;
-//   const email = form['email'];
-//   const password = form['password'].value;
+    if (input.type == 'email') {
+      if (input.value.match(regex)) {
+        input.parentElement.parentElement.classList.remove('error');
+      } else {
+        input.parentElement.parentElement.classList.add('error');
+      }
+    }
+  });
 
-//   if (inputField === '') {
-//   }
-// });
+  if (validateForm) {
+    return;
+  } else {
+    console.log('no');
+  }
+}
+
+form.addEventListener('submit', validateForm);
