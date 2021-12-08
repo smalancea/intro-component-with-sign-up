@@ -21,12 +21,6 @@ function validateForm(e) {
       }
     }
   });
-
-  if (validateForm) {
-    return;
-  } else {
-    console.log('no');
-  }
 }
 
 form.addEventListener('submit', validateForm);
