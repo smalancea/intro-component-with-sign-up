@@ -21,6 +21,10 @@ function validateForm(e) {
       }
     }
   });
+
+  if (validateForm) {
+    form.reset();
+  }
 }
 
 form.addEventListener('submit', validateForm);
